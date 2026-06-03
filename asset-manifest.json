@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Cricket-Score-Board-App/static/css/main.dadbaf49.css",
+    "main.js": "/Cricket-Score-Board-App/static/js/main.699e54e4.js",
+    "static/js/453.33a71fdb.chunk.js": "/Cricket-Score-Board-App/static/js/453.33a71fdb.chunk.js",
+    "static/media/logo.svg": "/Cricket-Score-Board-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Cricket-Score-Board-App/index.html",
+    "main.dadbaf49.css.map": "/Cricket-Score-Board-App/static/css/main.dadbaf49.css.map",
+    "main.699e54e4.js.map": "/Cricket-Score-Board-App/static/js/main.699e54e4.js.map",
+    "453.33a71fdb.chunk.js.map": "/Cricket-Score-Board-App/static/js/453.33a71fdb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dadbaf49.css",
+    "static/js/main.699e54e4.js"
+  ]
+}
