@@ -44,31 +44,32 @@ function App() {
   }
   
   return (
-
-    <div className="m-5 form-control w-50 bordered rounded mx-auto p-3">
+   <div className="container">
+    <div className="m-5 form-control w-75 bordered rounded mx-auto p-3">
        <h4 className="text-center fw-bold">CRICKET SCORE BOARD APP</h4>
-       <div className="m-5 fw-bold text-center bg-dark text-white p-3 w-25 mx-auto">
+       <div className="m-5 fw-bold text-center bg-dark text-white p-3 w-50 mx-auto">
            <p>Score :&nbsp;&nbsp;{score}</p>
            <p>Wickets :&nbsp;&nbsp;{wicket}</p>
            <p>Balls :&nbsp;&nbsp;{balls}</p>
            <p>Over :&nbsp;&nbsp;{over}</p>
        </div>
        
-       <div className="d-flex justify-content-center align-items-center">
-          <button className="btn btn-dark text-white fw-bold m-3" onClick={()=>{addscore(1)}} disabled={wicket=="All Wicket"}>1 Run</button>
-          <button className="btn btn-dark text-white fw-bold m-3" onClick={()=>{addscore(2)}} disabled={wicket=="All Wicket"}>2 Run</button>
-          <button className="btn btn-dark text-white fw-bold m-3" onClick={()=>{addscore(3)}} disabled={wicket=="All Wicket"}>3 Run</button>
-          <button className="btn btn-dark text-white fw-bold m-3" onClick={()=>{addscore(4)}} disabled={wicket=="All Wicket"}>4 Run</button>
-          <button className="btn btn-dark text-white fw-bold m-3" onClick={()=>{addscore(6)}} disabled={wicket=="All Wicket"}>6 Run</button>
+       <div className="row">
+          <button className="col btn btn-dark text-white fw-bold m-2" onClick={()=>{addscore(1)}} disabled={wicket=="All Wicket"}>1 Run</button>
+          <button className="col btn btn-dark text-white fw-bold m-2" onClick={()=>{addscore(2)}} disabled={wicket=="All Wicket"}>2 Run</button>
+          <button className="col btn btn-dark text-white fw-bold m-2" onClick={()=>{addscore(3)}} disabled={wicket=="All Wicket"}>3 Run</button>
+          <button className="col btn btn-dark text-white fw-bold m-2" onClick={()=>{addscore(4)}} disabled={wicket=="All Wicket"}>4 Run</button>
+          <button className="col btn btn-dark text-white fw-bold m-2" onClick={()=>{addscore(6)}} disabled={wicket=="All Wicket"}>6 Run</button>
        </div>
-       <div className="d-flex justify-content-center align-items-center fw-bold">
-         <button className="btn btn-danger text-white fw-bold m-3" onClick={handlewicket} disabled={wicket=="All Wicket"}>Wickets</button>
-         <button className="btn btn-secondary text-white fw-bold m-3" onClick={handlewide} disabled={wicket=="All Wicket"}>Wide</button>
+       <div className="row">
+         <button className="col btn btn-danger text-white fw-bold m-2" onClick={handlewicket} disabled={wicket=="All Wicket"}>Wickets</button>
+         <button className="col btn btn-secondary text-white fw-bold m-2" onClick={handlewide} disabled={wicket=="All Wicket"}>Wide</button>
        </div>
        <div className='text-center'>
          <h4 className={(over==20 || wicket=="All Wickets")?"text-muted":""}>Final Score :{wicket<10?`${score}/${wicket}`:score} &nbsp;&nbsp; Over:{over}</h4>
        </div>
     </div>
+  </div>
   );
 }
 
