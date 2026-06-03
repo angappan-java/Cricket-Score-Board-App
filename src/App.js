@@ -47,6 +47,7 @@ function App() {
    <div className="container">
     <div className="m-5 form-control w-75 bordered rounded mx-auto p-3">
        <h4 className="text-center fw-bold">CRICKET SCORE BOARD APP</h4>
+         <h5 className="text-center fw-bold">T20 MATCH</h5>
        <div className="m-5 fw-bold text-center bg-dark text-white p-3 w-50 mx-auto">
            <p>Score :&nbsp;&nbsp;{score}</p>
            <p>Wickets :&nbsp;&nbsp;{wicket}</p>
